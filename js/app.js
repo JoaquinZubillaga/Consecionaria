@@ -50,4 +50,20 @@ function menu() {
     }
 }
 
-menu()
+// menu()
+
+
+
+vehiculos.forEach(vehiculo => {
+    const vehiculos_card = document.createElement("div")
+    vehiculos_card.innerHTML = `
+    <div id="${vehiculo.id}">
+    <p>${vehiculo.marca}</p>
+    <p>${vehiculo.modelo}</p>
+    <img src=${vehiculo.imagen}>
+    <p>${vehiculo.precio}</p>
+    <button id = btn${vehiculo.id}> comprar </button>
+    </div> `
+
+    document.body.appendChild(vehiculos_card)
+})
