@@ -50,8 +50,6 @@ function menu() {
     }
 }
 
-// menu()
-
 
 
 vehiculos.forEach(vehiculo => {
